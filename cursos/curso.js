@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-pdf]').forEach(button=>{button.addEventListener('click',()=>{const target=document.getElementById('visor-pdf');const url=button.dataset.pdf;target.src=url;target.classList.add('visible');target.scrollIntoView({behavior:'smooth',block:'start'});});});
